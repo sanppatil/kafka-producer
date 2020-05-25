@@ -12,5 +12,5 @@ dependencies {
 }
 
 application {
-    mainClassName = 'com.kafkaSimpleConsumer.Main'
+    mainClassName = 'com.kafkaSimpleProducer.Main'
 }

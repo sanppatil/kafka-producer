@@ -1,4 +1,4 @@
-package com.kafkaSimpleConsumer;
+package com.kafkaSimpleProducer;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
