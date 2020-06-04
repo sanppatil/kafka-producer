@@ -30,12 +30,7 @@ public class ProducerWithCallback {
 
 		// Send data
 		for (int i = 0; i < 5; i++) {
-
-			String topic = "first_topic";
-			String key = "id_" + Integer.toString(i);
-			String value = "Message # " + Integer.toString(i);
-
-			ProducerRecord<String, String> producerRecord = new ProducerRecord<>(topic, key, value);
+			ProducerRecord<String, String> producerRecord = new ProducerRecord<>("first-topic", Integer.toString(i));
 			producer.send(producerRecord, new Callback() {
 				@Override
 				public void onCompletion(RecordMetadata metadata, Exception exception) {
